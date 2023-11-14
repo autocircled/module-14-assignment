@@ -3,12 +3,28 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function AppNavBar() {
     const expand = 'md'
+
+    useEffect(() => {
+        const body = document.body;
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 0) {
+                body.classList.add("scrolled");
+            } else {
+                body.classList.remove("scrolled");
+            }
+        };
+
+        return () => {
+            window.onscroll = null;
+        };
+    }, [])
     return (
         <>
-            <Navbar expand={expand} className="main bg-body-transparent mb-3 fixed-top">
+            <Navbar expand={expand} id="main-navbar" className="main bg-body-transparent mb-3 fixed-top">
                 <Container>
                     <Navbar.Brand href="#">AutoCircled</Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
