@@ -1,0 +1,9 @@
+.hero {
+    background-color: rgb(215, 245, 220);
+}
+
+.hero .hero-inner {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    min-height: 500px;
+}
