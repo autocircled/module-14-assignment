@@ -1,27 +1,29 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartLine, faArrowRight, faHeart, faSuitcase } from '@fortawesome/free-solid-svg-icons'
 import '../assets/css/work-list.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { MdOutlineShowChart } from "react-icons/md";
+import { LuHeartHandshake } from "react-icons/lu";
+import { GiSuitcase } from "react-icons/gi";
+import { IoMdArrowForward } from "react-icons/io";
 
 const WorkList = () => {
     const [data] = useState([
         {
             title: 'Grow Your Business',
             description: 'We help identify the best ways to improve your business',
-            icon: faChartLine,
+            icon: MdOutlineShowChart,
             link: '/grow'
         },
         {
             title: 'Improve brand loyalty',
             description: 'We help identify the best ways to improve your business',
-            icon: faHeart,
+            icon: LuHeartHandshake,
             link: '/improve'
         },
         {
             title: 'Grow Your Business',
             description: 'We help identify the best ways to improve your business',
-            icon: faSuitcase,
+            icon: GiSuitcase,
             link: '/business'
         },
     ])
@@ -39,14 +41,14 @@ const WorkList = () => {
 
                         <div key={index.toString()} className="col-md-4">
                             <div className="work-icon">
-                                <FontAwesomeIcon icon={item.icon} />
+                                <span className='d-inline-block'><item.icon /></span>
                             </div>
                             <div className="work-body my-5">
                                 <h5 className="title">{item.title}</h5>
                                 <p className="description">{item.description}</p>
 
                             </div>
-                            <Link to={item.link}>Learn More <FontAwesomeIcon icon={faArrowRight} /></Link>
+                            <Link to={item.link}>Learn More <IoMdArrowForward /></Link>
                         </div>
                     ))}
                 </div>
