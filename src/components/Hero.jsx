@@ -8,8 +8,8 @@ const Hero = () => {
             <div className="container hero-inner">
                 <div className="row justify-content-reverse">
                     <div className="col-md-6 d-flex flex-column justify-content-center align-items-start">
-                        <h1 className="display-3">Increase Your Customers Loyalty<br />and Satisfaction</h1>
-                        <p>We help businesses like yours earn more customers, standout from competitors,  make more money</p>
+                        <h1 className="display-3">Increase Your Customers Loyalty and Satisfaction</h1>
+                        <p className="lead">We help businesses like yours earn more customers, standout from competitors,  make more money</p>
 
                         <Button variant="success" className="mt-2 mt-md-3 py-2 px-3">Get Started</Button>
                     </div>

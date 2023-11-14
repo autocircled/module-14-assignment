@@ -8,7 +8,7 @@ function AppNavBar() {
     const expand = 'md'
     return (
         <>
-            <Navbar expand={expand} className="bg-body-transparent mb-3 fixed-top">
+            <Navbar expand={expand} className="main bg-body-transparent mb-3 fixed-top">
                 <Container>
                     <Navbar.Brand href="#">AutoCircled</Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
