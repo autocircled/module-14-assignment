@@ -1,0 +1,35 @@
+.work-list .title {
+    font-size: 20px;
+    color: #20B15A;
+}
+
+.work-list .description {
+    font-size: 30px;
+    color: #000;
+}
+
+.work-list .work-icon svg {
+    background-color: #D7F5DC;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 50px;
+}
+
+.work-body .title {
+    font-size: 24px;
+    color: #000;
+}
+
+.work-body .description,
+.work-list a {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 100;
+    text-decoration: none;
+    color: #6f6f6f;
+}
+
+.work-list a:hover,
+.work-list a svg {
+    color: #000;
+}
