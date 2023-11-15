@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <section className="footer bg-black text-white py-5">
+        <section className="footer bg-black text-white py-5 small">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 my-4 my-md-0">
@@ -53,6 +53,11 @@ const Footer = () => {
                                 <span>+012 345 67890</span>
                             </li>
                         </ul>
+                    </div>
+                </div>
+                <div className="row copyright mt-5">
+                    <div className="col-md-6">
+                        <p className="mb-0">© 2023 AutoCircled. All Rights Reserved</p>
                     </div>
                 </div>
             </div>
