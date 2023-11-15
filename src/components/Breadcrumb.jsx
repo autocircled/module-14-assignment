@@ -1,7 +1,6 @@
 import { Breadcrumb } from 'react-bootstrap'
 import PropTypes from 'prop-types';
 import '../assets/css/breadcrumb.css'
-import { Link } from 'react-router-dom';
 
 const BreadcrumbList = (props) => {
 
@@ -12,7 +11,7 @@ const BreadcrumbList = (props) => {
                 <div className="row">
                     <div className="col-12">
                         <Breadcrumb>
-                            <Breadcrumb.Item><Link to="/">Home</Link></Breadcrumb.Item>
+                            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                             <Breadcrumb.Item active>{props.page}</Breadcrumb.Item>
                         </Breadcrumb>
                     </div>
