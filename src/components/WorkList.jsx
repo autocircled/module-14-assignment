@@ -5,6 +5,7 @@ import { MdOutlineShowChart } from "react-icons/md";
 import { LuHeartHandshake } from "react-icons/lu";
 import { GiSuitcase } from "react-icons/gi";
 import { IoMdArrowForward } from "react-icons/io";
+import Counter from './Counter';
 
 const WorkList = () => {
     const [data] = useState([
@@ -53,6 +54,8 @@ const WorkList = () => {
                     ))}
                 </div>
             </div>
+
+            <Counter />
 
         </section>
     )
