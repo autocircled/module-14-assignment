@@ -39,7 +39,7 @@ const FeaturedProjects = () => {
         },
     ])
     return (
-        <section className="featured-projects py-5">
+        <section className="featured-projects py-5" style={{ backgroundColor: '#F0FDF4' }}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
