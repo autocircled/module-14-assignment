@@ -33,7 +33,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.heading {
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
 }
@@ -46,4 +47,10 @@ section .title {
 section .description {
     font-size: 30px;
     color: #000;
+}
+
+span.time {
+    font-weight: 100;
+    font-size: 14px;
+    color: #2E3E5C;
 }

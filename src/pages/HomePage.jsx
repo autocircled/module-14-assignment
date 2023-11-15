@@ -1,5 +1,5 @@
 import AppNavBar from '../components/AppNavBar'
-import Counter from '../components/Counter'
+import FeaturedProjects from '../components/FeaturedProjects'
 import Hero from '../components/Hero'
 import WorkList from '../components/WorkList'
 
@@ -9,7 +9,8 @@ const HomePage = () => {
             <AppNavBar />
             <Hero />
             <WorkList />
-            <Counter />
+            <FeaturedProjects />
+
 
         </>
     )
