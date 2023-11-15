@@ -2,7 +2,7 @@ import '../assets/css/form.css'
 
 const SubscribeForm = () => {
     return (
-        <section className="subscribe-form bg-white py-5">
+        <section className="subscribe-form bg-white py-5 mb-5">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-5 text-center">
