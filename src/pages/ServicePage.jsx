@@ -1,15 +1,16 @@
 import AppNavBar from '../components/AppNavBar'
 import BreadcrumbList from '../components/Breadcrumb'
 import Footer from '../components/Footer'
+import Services from '../components/Services'
+import SubscribeForm from '../components/SubscribeForm'
 
 const ServicePage = () => {
     return (
         <>
             <AppNavBar />
             <BreadcrumbList page="Service" />
-            <div>
-                <h1>Service</h1>
-            </div>
+            <Services />
+            <SubscribeForm />
             <Footer />
 
 
