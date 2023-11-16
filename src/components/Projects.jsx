@@ -40,42 +40,42 @@ const Projects = () => {
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-6.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-7.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-8.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-9.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-10.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-11.png'
         },
@@ -93,17 +93,18 @@ const Projects = () => {
                 </div>
                 <div className="row list py-5">
                     {data.map((item, index) => (
-                        index > 4 &&
-                        <div key={index.toString()} className="col-md-6 my-4 project rounded">
-                            <div className="inner-wrapper p-5 shadow-sm rounded-5">
-                                <div className="project-picture text-center">
-                                    <img className="img-fluid" src={item.thumbnail} alt={item.title} />
-                                </div>
-                                <div className="team-body mt-4">
-                                    <h3 className="name">{item.title}</h3>
+                        (item['tag'] === 'general' &&
+                            <div key={index.toString()} className="col-md-6 my-4 project rounded">
+                                <div className="inner-wrapper p-5 shadow-sm rounded-5">
+                                    <div className="project-picture text-center">
+                                        <img className="img-fluid" src={item.thumbnail} alt={item.title} />
+                                    </div>
+                                    <div className="team-body mt-4">
+                                        <h3 className="name">{item.title}</h3>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        )
                     ))}
                 </div>
             </div>
