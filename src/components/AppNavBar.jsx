@@ -43,6 +43,7 @@ function AppNavBar() {
                                 <NavLink to='/' className='nav-link'>Home</NavLink>
                                 <NavLink to='/team' className='nav-link'>Team</NavLink>
                                 <NavLink to='/service' className='nav-link'>Service</NavLink>
+                                <NavLink to='/project' className='nav-link'>Project</NavLink>
                                 <NavLink to='/testimonials' className='nav-link'>Testimonials</NavLink>
                                 <NavLink to='/login' className='btn btn-outline-success'>Login</NavLink>
                                 <NavLink to='/register' className='btn btn-success'>Register</NavLink>

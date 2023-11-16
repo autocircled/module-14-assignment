@@ -5,6 +5,7 @@ import ServicePage from './pages/ServicePage'
 import TestimonialsPage from './pages/TestimonialsPage'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
+import ProjectPage from './pages/ProjectPage'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/' element={<HomePage />} />
         <Route path='/team' element={<TeamPage />} />
         <Route path='/service' element={<ServicePage />} />
+        <Route path='/project' element={<ProjectPage />} />
         <Route path='/testimonials' element={<TestimonialsPage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/register' element={<RegisterPage />} />
