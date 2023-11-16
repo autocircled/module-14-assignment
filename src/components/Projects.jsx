@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const FeaturedProjects = () => {
+const Projects = () => {
     const [data] = useState([
         {
             title: 'App Redesign',
@@ -79,47 +79,36 @@ const FeaturedProjects = () => {
             time: 'June 20, 2022',
             thumbnail: '/images/project-11.png'
         },
+
     ])
     return (
-        <section className="featured-projects py-5" style={{ backgroundColor: '#F0FDF4' }}>
+        <section className="projects py-5">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <h3 className="title d-block fw-bold text-uppercase">Featured Project</h3>
-                        <h3 className="description">We provide the Perfect Solution to your business growth</h3>
+                        <h1 className="title d-block fw-bold text-uppercase">All Project</h1>
+                        <p className="description fw-bold">Better Agency/SEO Solution<br />At Your Fingertips</p>
                     </div>
+
                 </div>
                 <div className="row list py-5">
-                    <div className="col-md-6">
-                        <div className="thumbnail">
-                            <img className='img-fluid' src={data[0].thumbnail} alt="" />
-                        </div>
-                        <div className="work-body mt-3">
-                            <span className="d-block time heading">{data[0].time}</span>
-                            <h5 className="title">{data[0].title}</h5>
-                        </div>
-                    </div>
-                    <div className="col-md-6">
-                        <div className="row">
-                            {data.map((item, index) => (
-                                index !== 0 && index <= 4 &&
-                                <div key={index.toString()} className="col-md-6 mb-4">
-                                    <div className="thumbnail">
-                                        <img className="img-fluid" src={item.thumbnail} alt="" />
-                                    </div>
-                                    <div className="work-body mt-3">
-                                        <span className="d-block time heading">{item.time + " " + index}</span>
-                                        <h5 className="title">{item.title}</h5>
-                                    </div>
+                    {data.map((item, index) => (
+                        index > 4 &&
+                        <div key={index.toString()} className="col-md-6 my-4 project rounded">
+                            <div className="inner-wrapper p-5 shadow-sm rounded-5">
+                                <div className="project-picture text-center">
+                                    <img className="img-fluid" src={item.thumbnail} alt={item.title} />
                                 </div>
-                            ))}
+                                <div className="team-body mt-4">
+                                    <h3 className="name">{item.title}</h3>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    ))}
                 </div>
             </div>
-
         </section>
     )
 }
 
-export default FeaturedProjects
+export default Projects

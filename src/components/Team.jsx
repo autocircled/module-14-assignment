@@ -71,8 +71,8 @@ export const Team = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <h3 className="title d-block fw-bold text-uppercase">Work List</h3>
-                        <h3 className="description">We provide the Perfect Solution<br />to your business growth</h3>
+                        <h1 className="title d-block fw-bold text-uppercase">Work List</h1>
+                        <p className="description fw-bold">We provide the Perfect Solution<br />to your business growth</p>
                     </div>
 
                 </div>

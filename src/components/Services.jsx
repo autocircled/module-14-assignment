@@ -28,8 +28,8 @@ const Services = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <h2 className="title d-block fw-bold text-uppercase">Our All Services</h2>
-                        <h2 className="description">We Provide Best<br />Web Design Services</h2>
+                        <h1 className="title d-block fw-bold text-uppercase">Our All Services</h1>
+                        <p className="description fw-bold">We Provide Best<br />Web Design Services</p>
                     </div>
 
                 </div>
@@ -42,7 +42,7 @@ const Services = () => {
                                     <h3 className="name">{item.title}</h3>
                                     <p>{item.desc}</p>
                                 </div>
-                                <div className="team-member-picture text-center">
+                                <div className="service-picture text-center">
                                     <img className="img-fluid" src={item.image} alt={item.title} />
 
                                 </div>
