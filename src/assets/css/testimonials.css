@@ -1,0 +1,12 @@
+.testimonials .client-picture img {
+    width: 100px;
+}
+
+.testimonials p.quote {
+    font-size: 16px;
+    color: #9D9D9D;
+}
+
+.testimonials p.position {
+    font-size: 16px;
+}
