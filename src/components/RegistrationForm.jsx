@@ -5,14 +5,13 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
-import { MdAlternateEmail, MdOutlinePassword } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
-
-const LoginForm = () => {
-
+const RegistrationForm = () => {
     const [validated, setValidated] = useState(false);
     const [data, setData] = useState({
+        fname: '',
+        lname: '',
         email: '',
         password: '',
     })
@@ -27,7 +26,6 @@ const LoginForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(event.tar);
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
 
@@ -39,20 +37,51 @@ const LoginForm = () => {
     };
 
     return (
-        <section className='login-form py-5'>
-            <h2 className='text-center mb-5'>Login</h2>
+        <section className='registration-form py-5'>
+            <h2 className='text-center mb-5'>Register</h2>
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Container>
                     <Row className="mb-3 justify-content-center">
-                        <Form.Group as={Col} md="4" controlId="email">
-                            <Form.Label>Email</Form.Label>
+                        <Form.Group as={Col} md="4" controlId="fname">
+
                             <InputGroup hasValidation>
-                                <InputGroup.Text><MdAlternateEmail /></InputGroup.Text>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="First name"
+                                    aria-describedby="fname"
+                                    onChange={e => handleChange(e, 'fname')}
+                                    required
+                                />
+                                <Form.Control.Feedback type="invalid">
+                                    First name is required
+                                </Form.Control.Feedback>
+                            </InputGroup>
+                        </Form.Group>
+                    </Row>
+                    <Row className="mb-3 justify-content-center">
+                        <Form.Group as={Col} md="4" controlId="lname">
+                            <InputGroup hasValidation>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Last name"
+                                    aria-describedby="lname"
+                                    onChange={e => handleChange(e, 'lname')}
+                                    required
+                                />
+                                <Form.Control.Feedback type="invalid">
+                                    Last name is required
+                                </Form.Control.Feedback>
+                            </InputGroup>
+                        </Form.Group>
+                    </Row>
+                    <Row className="mb-3 justify-content-center">
+                        <Form.Group as={Col} md="4" controlId="email">
+                            <InputGroup hasValidation>
                                 <Form.Control
                                     type="email"
                                     placeholder="Email address"
                                     aria-describedby="email"
-                                    onChange={(event) => handleChange(event, 'email')}
+                                    onChange={e => handleChange(e, 'email')}
                                     required
                                 />
                                 <Form.Control.Feedback type="invalid">
@@ -63,14 +92,12 @@ const LoginForm = () => {
                     </Row>
                     <Row className="mb-3 justify-content-center">
                         <Form.Group as={Col} md="4" controlId="password">
-                            <Form.Label>Password</Form.Label>
                             <InputGroup hasValidation>
-                                <InputGroup.Text><MdOutlinePassword /></InputGroup.Text>
                                 <Form.Control
                                     type="password"
                                     placeholder="Password"
                                     aria-describedby="password"
-                                    onChange={(event) => handleChange(event, 'password')}
+                                    onChange={e => handleChange(e, 'password')}
                                     required
                                 />
                                 <Form.Control.Feedback type="invalid">
@@ -81,16 +108,16 @@ const LoginForm = () => {
                     </Row>
                     <Row className="mb-3 justify-content-center">
                         <Form.Group as={Col} md="4" className='text-center'>
-                            <Button type="submit">Login</Button>
+                            <Button type="submit">Register</Button>
                         </Form.Group>
                         <Form.Text className='text-center mt-3'>
-                            Are you new here? <Link to="/register">Register</Link>
+                            Already have an account? <Link to="/login">Login</Link>
                         </Form.Text>
                     </Row>
                 </Container>
             </Form>
         </section>
-    );
+    )
 }
 
-export default LoginForm
+export default RegistrationForm

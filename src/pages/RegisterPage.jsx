@@ -1,15 +1,14 @@
 import AppNavBar from '../components/AppNavBar'
 import BreadcrumbList from '../components/Breadcrumb'
 import Footer from '../components/Footer'
+import RegistrationForm from '../components/RegistrationForm'
 
 const RegisterPage = () => {
     return (
         <>
             <AppNavBar />
             <BreadcrumbList page="Register" />
-            <div>
-                <h1>Register</h1>
-            </div>
+            <RegistrationForm />
             <Footer />
 
 
