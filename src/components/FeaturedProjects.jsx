@@ -5,7 +5,7 @@ const FeaturedProjects = () => {
         {
             title: 'App Redesign',
             category: 'App Design',
-            tag: 'featured',
+            tag: 'vip',
             time: 'June 20, 2022',
             thumbnail: '/images/project-1.png'
         },
@@ -40,42 +40,42 @@ const FeaturedProjects = () => {
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-6.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-7.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-8.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-9.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-10.png'
         },
         {
             title: 'Redesign channel website landng page',
             category: 'App Design',
-            tag: '',
+            tag: 'general',
             time: 'June 20, 2022',
             thumbnail: '/images/project-11.png'
         },
@@ -91,18 +91,23 @@ const FeaturedProjects = () => {
                 </div>
                 <div className="row list py-5">
                     <div className="col-md-6">
-                        <div className="thumbnail">
-                            <img className='img-fluid' src={data[0].thumbnail} alt="" />
-                        </div>
-                        <div className="work-body mt-3">
-                            <span className="d-block time heading">{data[0].time}</span>
-                            <h5 className="title">{data[0].title}</h5>
-                        </div>
+                        {data.map((item, index) => (
+                            item['tag'] === 'vip' &&
+                            <>
+                                <div key={index.toString()} className="thumbnail">
+                                    <img className='img-fluid' src={item.thumbnail} alt="" />
+                                </div>
+                                <div className="work-body mt-3">
+                                    <span className="d-block time heading">{item.time}</span>
+                                    <h5 className="title">{item.title}</h5>
+                                </div>
+                            </>
+                        ))}
                     </div>
                     <div className="col-md-6">
                         <div className="row">
                             {data.map((item, index) => (
-                                index !== 0 && index <= 4 &&
+                                item['tag'] === 'featured' &&
                                 <div key={index.toString()} className="col-md-6 mb-4">
                                     <div className="thumbnail">
                                         <img className="img-fluid" src={item.thumbnail} alt="" />
