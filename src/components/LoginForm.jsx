@@ -45,7 +45,6 @@ const LoginForm = () => {
                 <Container>
                     <Row className="mb-3 justify-content-center">
                         <Form.Group as={Col} md="4" controlId="email">
-                            <Form.Label>Email</Form.Label>
                             <InputGroup hasValidation>
                                 <InputGroup.Text><MdAlternateEmail /></InputGroup.Text>
                                 <Form.Control
@@ -63,7 +62,6 @@ const LoginForm = () => {
                     </Row>
                     <Row className="mb-3 justify-content-center">
                         <Form.Group as={Col} md="4" controlId="password">
-                            <Form.Label>Password</Form.Label>
                             <InputGroup hasValidation>
                                 <InputGroup.Text><MdOutlinePassword /></InputGroup.Text>
                                 <Form.Control
