@@ -71,7 +71,7 @@ export const Team = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <h1 className="title d-block fw-bold text-uppercase">Work List</h1>
+                        <h2 className="title d-block fw-bold text-uppercase">Work List</h2>
                         <p className="description fw-bold">We provide the Perfect Solution<br />to your business growth</p>
                     </div>
 

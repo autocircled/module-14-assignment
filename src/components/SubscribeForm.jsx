@@ -8,7 +8,7 @@ const SubscribeForm = () => {
                     <div className="col-md-5 text-center">
                         <div className="form-header">
                             <h3 className="title d-block fw-bold text-uppercase">SUBSCRIBE</h3>
-                            <h3 className="description text-capitalize">Subscribe to get the latest news about us</h3>
+                            <p className="description text-capitalize fw-bold">Subscribe to get the latest news about us</p>
                             <p className='info small text-capitalize'>Please drop your email below to get daily update about what we do</p>
                         </div>
                         <div className="form-body">

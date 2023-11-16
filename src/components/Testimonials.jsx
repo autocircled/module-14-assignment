@@ -47,7 +47,7 @@ const Testimonials = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <h1 className="title d-block fw-bold text-uppercase">Testimonial List</h1>
+                        <h2 className="title d-block fw-bold text-uppercase">Testimonial List</h2>
                         <p className="description fw-bold">Better Agency/SEO Solution<br />At Your Fingertips</p>
                     </div>
 

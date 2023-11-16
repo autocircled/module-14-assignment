@@ -1,17 +1,36 @@
 section.breadcrumb-section {
     background-color: #F8F9FC;
-    padding: 250px 0 80px;
+    padding: 100px 0 40px;
     position: relative;
+    overflow: hidden;
+}
+
+section.breadcrumb-section ol.breadcrumb {
+    margin-bottom: 0;
 }
 
 section.breadcrumb-section .ellipse {
-    height: 370px;
+
+    height: 100%;
+    width: 50%;
     overflow: hidden;
-    width: 521px;
     position: absolute;
     top: 0;
     right: 0;
 }
+
+@media screen and (min-width: 768px) {
+    section.breadcrumb-section {
+        padding: 191px 0 80px;
+        ;
+    }
+
+    section.breadcrumb-section .ellipse {
+        height: 370px;
+        width: 521px;
+    }
+}
+
 
 section.breadcrumb-section .ellipse:before {
     content: '';

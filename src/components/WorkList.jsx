@@ -34,7 +34,7 @@ const WorkList = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <h3 className="title d-block fw-bold text-uppercase">Work List</h3>
-                        <h3 className="description">We provide the Perfect Solution to your business growth</h3>
+                        <p className="description fw-bold">We provide the Perfect Solution to your business growth</p>
                     </div>
                 </div>
                 <div className="row list py-5">

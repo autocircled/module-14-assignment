@@ -10,6 +10,9 @@ const BreadcrumbList = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
+                        <div className="page-title">
+                            <h1>{props.page}</h1>
+                        </div>
                         <Breadcrumb>
                             <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                             <Breadcrumb.Item active>{props.page}</Breadcrumb.Item>

@@ -28,7 +28,7 @@ const Services = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <h1 className="title d-block fw-bold text-uppercase">Our All Services</h1>
+                        <h2 className="title d-block fw-bold text-uppercase">Our All Services</h2>
                         <p className="description fw-bold">We Provide Best<br />Web Design Services</p>
                     </div>
 
