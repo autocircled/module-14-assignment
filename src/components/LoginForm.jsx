@@ -27,6 +27,7 @@ const LoginForm = () => {
 
     return (
         <section className='login-form py-5'>
+            <h2 className='text-center mb-5'>Login</h2>
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Container>
                     <Row className="mb-3 justify-content-center">
