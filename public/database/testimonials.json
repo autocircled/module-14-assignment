@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "name": "Alice Bradley",
+            "position": "UI/UX Designer",
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et placerat metus. Morbi aliquet felis sit amet erat finibus, ac condimentum ligula ornare.",
+            "image": "/images/client-1.png"
+        },
+        {
+            "name": "John Carter",
+            "position": "Software Engineer",
+            "quote": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+            "image": "/images/client-2.png"
+        },
+        {
+            "name": "E. Rodriguez",
+            "position": "Marketing Manager",
+            "quote": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+            "image": "/images/client-3.png"
+        },
+        {
+            "name": "Michael Turner",
+            "position": "Product Manager",
+            "quote": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+            "image": "/images/client-4.png"
+        },
+        {
+            "name": "S. Martinez",
+            "position": "Graphic Designer",
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua adipiscing elit consectetur.",
+            "image": "/images/client-5.png"
+        },
+        {
+            "name": "Robert Foster",
+            "position": "Web Developer",
+            "quote": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+            "image": "/images/client-6.png"
+        }
+    ]
+}

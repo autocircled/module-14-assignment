@@ -1,47 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../assets/css/testimonials.css'
+import { getJsonData } from '../apiRequests/apiRequest'
 
 const Testimonials = () => {
-    const [data] = useState([
+    const [data, setData] = useState([])
 
-        {
-            name: 'Alice Bradley',
-            position: 'UI/UX Designer',
-            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et placerat metus. Morbi aliquet felis sit amet erat finibus, ac condimentum ligula ornare.',
-            image: '/images/client-1.png',
-        },
-        {
-            name: 'Alice Bradley',
-            position: 'UI/UX Designer',
-            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et placerat metus. Morbi aliquet felis sit amet erat finibus, ac condimentum ligula ornare.',
-            image: '/images/client-2.png',
-        },
-        {
-            name: 'Alice Bradley',
-            position: 'UI/UX Designer',
-            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et placerat metus. Morbi aliquet felis sit amet erat finibus, ac condimentum ligula ornare.',
-            image: '/images/client-3.png',
-        },
-        {
-            name: 'Alice Bradley',
-            position: 'UI/UX Designer',
-            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et placerat metus. Morbi aliquet felis sit amet erat finibus, ac condimentum ligula ornare.',
-            image: '/images/client-4.png',
-        },
-        {
-            name: 'Alice Bradley',
-            position: 'UI/UX Designer',
-            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et placerat metus. Morbi aliquet felis sit amet erat finibus, ac condimentum ligula ornare.',
-            image: '/images/client-5.png',
-        },
-        {
-            name: 'Alice Bradley',
-            position: 'UI/UX Designer',
-            quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et placerat metus. Morbi aliquet felis sit amet erat finibus, ac condimentum ligula ornare.',
-            image: '/images/client-6.png',
-        },
+    useEffect(() => {
+        (async () => {
+            try {
+                const { data } = await getJsonData('testimonials.json')
+                setData(data['data']);
+            } catch (error) {
+                console.log(error);
+            }
+        })()
 
-    ])
+    }, [])
     return (
         <section className="testimonials py-5">
             <div className="container">
