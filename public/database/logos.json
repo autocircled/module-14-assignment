@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "title": "Google",
+            "logo": "/images/google.svg"
+        },
+        {
+            "title": "Trello",
+            "logo": "/images/trello.svg"
+        },
+        {
+            "title": "Monday",
+            "logo": "/images/monday.svg"
+        },
+        {
+            "title": "Notion",
+            "logo": "/images/notion.svg"
+        },
+        {
+            "title": "Slack",
+            "logo": "/images/slack.svg"
+        }
+    ]
+}
