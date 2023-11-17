@@ -1,4 +1,5 @@
 import AppNavBar from '../components/AppNavBar'
+import Counter from '../components/Counter'
 import FeaturedProjects from '../components/FeaturedProjects'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
@@ -11,6 +12,7 @@ const HomePage = () => {
             <AppNavBar />
             <Hero />
             <WorkList />
+            <Counter />
             <FeaturedProjects />
             <SubscribeForm />
             <Footer />

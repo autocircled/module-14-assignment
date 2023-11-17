@@ -1,7 +1,6 @@
 import '../assets/css/work-list.css'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import Counter from './Counter';
 import { getJsonData } from '../apiRequests/apiRequest';
 
 const WorkList = () => {
@@ -44,8 +43,6 @@ const WorkList = () => {
                     ))}
                 </div>
             </div>
-
-            <Counter />
 
         </section>
     )
