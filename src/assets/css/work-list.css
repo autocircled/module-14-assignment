@@ -4,7 +4,7 @@
     border-radius: 20px;
 }
 
-.work-list .work-icon svg {
+.work-list .work-icon i {
     font-size: 50px;
 }
 
@@ -23,6 +23,6 @@
 }
 
 .work-list a:hover,
-.work-list a svg {
+.work-list a i {
     color: #000;
 }

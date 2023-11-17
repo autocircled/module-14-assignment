@@ -11,7 +11,7 @@ const HomePage = () => {
             <AppNavBar />
             <Hero />
             <WorkList />
-            {/* <FeaturedProjects /> */}
+            <FeaturedProjects />
             <SubscribeForm />
             <Footer />
 

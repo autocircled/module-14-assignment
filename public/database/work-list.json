@@ -1,0 +1,22 @@
+{
+    "list": [
+        {
+            "title": "Grow Your Business",
+            "description": "We help identify the best ways to improve your business",
+            "icon": "fas fa-chart-line",
+            "link": "/grow"
+        },
+        {
+            "title": "Improve brand loyalty",
+            "description": "We help identify the best ways to improve your business",
+            "icon": "far fa-heart",
+            "link": "/improve"
+        },
+        {
+            "title": "Grow Your Business",
+            "description": "We help identify the best ways to improve your business",
+            "icon": "fas fa-briefcase",
+            "link": "/business"
+        }
+    ]
+}
