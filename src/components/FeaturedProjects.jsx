@@ -1,85 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { getJsonData } from '../apiRequests/apiRequest'
 
 const FeaturedProjects = () => {
-    const [data] = useState([
-        {
-            title: 'App Redesign',
-            category: 'App Design',
-            tag: 'vip',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-1.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'featured',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-2.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'featured',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-3.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'featured',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-4.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'featured',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-5.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'general',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-6.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'general',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-7.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'general',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-8.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'general',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-9.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'general',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-10.png'
-        },
-        {
-            title: 'Redesign channel website landng page',
-            category: 'App Design',
-            tag: 'general',
-            time: 'June 20, 2022',
-            thumbnail: '/images/project-11.png'
-        },
-    ])
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const { data } = await getJsonData('featured-projects.json');
+                setData(data['data']);
+            } catch (error) {
+                console.log(error);
+            }
+        })()
+    }, [])
+
     return (
         <section className="featured-projects py-5" style={{ backgroundColor: '#F0FDF4' }}>
             <div className="container">
@@ -95,7 +30,7 @@ const FeaturedProjects = () => {
                             item['tag'] === 'vip' &&
                             <>
                                 <div key={index.toString()} className="thumbnail">
-                                    <img className='img-fluid' src={item.thumbnail} alt="" />
+                                    <img className='img-fluid' src={item.image} alt="" />
                                 </div>
                                 <div className="work-body mt-3">
                                     <span className="d-block time heading">{item.time}</span>
@@ -110,10 +45,10 @@ const FeaturedProjects = () => {
                                 item['tag'] === 'featured' &&
                                 <div key={index.toString()} className="col-md-6 mb-4">
                                     <div className="thumbnail">
-                                        <img className="img-fluid" src={item.thumbnail} alt="" />
+                                        <img className="img-fluid" src={item.image} alt="" />
                                     </div>
                                     <div className="work-body mt-3">
-                                        <span className="d-block time heading">{item.time + " " + index}</span>
+                                        <span className="d-block time heading">{item.time}</span>
                                         <h5 className="title">{item.title}</h5>
                                     </div>
                                 </div>

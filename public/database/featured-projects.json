@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "title": "E-commerce Platform",
+            "category": "Web Development",
+            "tag": "vip",
+            "time": "July 15, 2022",
+            "image": "/images/project-1.png"
+        },
+        {
+            "title": "Financial Dashboard",
+            "category": "UI/UX Design",
+            "tag": "featured",
+            "time": "August 5, 2022",
+            "image": "/images/project-2.png"
+        },
+        {
+            "title": "Mobile Fitness App",
+            "category": "App Development",
+            "tag": "featured",
+            "time": "September 10, 2022",
+            "image": "/images/project-3.png"
+        },
+        {
+            "title": "Corporate Identity",
+            "category": "Branding",
+            "tag": "featured",
+            "time": "October 1, 2022",
+            "image": "/images/project-4.png"
+        },
+        {
+            "title": "Social Media Campaign",
+            "category": "Marketing",
+            "tag": "featured",
+            "time": "November 12, 2022",
+            "image": "/images/project-5.png"
+        },
+        {
+            "title": "Smart Home Automation",
+            "category": "IoT",
+            "tag": "general",
+            "time": "December 3, 2022",
+            "image": "/images/project-6.png"
+        },
+        {
+            "title": "Educational Platform",
+            "category": "Web Development",
+            "tag": "general",
+            "time": "January 7, 2023",
+            "image": "/images/project-7.png"
+        },
+        {
+            "title": "Travel Planning App",
+            "category": "App Design",
+            "tag": "general",
+            "time": "February 18, 2023",
+            "image": "/images/project-8.png"
+        },
+        {
+            "title": "Sustainable Packaging",
+            "category": "Product Design",
+            "tag": "general",
+            "time": "March 25, 2023",
+            "image": "/images/project-9.png"
+        },
+        {
+            "title": "Community Engagement",
+            "category": "Social Impact",
+            "tag": "general",
+            "time": "April 9, 2023",
+            "image": "/images/project-10.png"
+        }
+    ]
+}
