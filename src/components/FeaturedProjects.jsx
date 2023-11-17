@@ -7,7 +7,7 @@ const FeaturedProjects = () => {
     useEffect(() => {
         (async () => {
             try {
-                const { data } = await getJsonData('featured-projects.json');
+                const { data } = await getJsonData('projects.json');
                 setData(data['data']);
             } catch (error) {
                 console.log(error);
@@ -28,15 +28,15 @@ const FeaturedProjects = () => {
                     <div className="col-md-6">
                         {data.map((item, index) => (
                             item['tag'] === 'vip' &&
-                            <>
-                                <div key={index.toString()} className="thumbnail">
+                            <div key={index.toString()} className='inner-wrrapper'>
+                                <div className="thumbnail">
                                     <img className='img-fluid' src={item.image} alt="" />
                                 </div>
                                 <div className="work-body mt-3">
                                     <span className="d-block time heading">{item.time}</span>
                                     <h5 className="title">{item.title}</h5>
                                 </div>
-                            </>
+                            </div>
                         ))}
                     </div>
                     <div className="col-md-6">
