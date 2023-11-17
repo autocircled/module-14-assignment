@@ -1,28 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { getJsonData } from '../apiRequests/apiRequest'
 
 const Services = () => {
-    const [data] = useState([
-        {
-            title: 'Build & Launch without problems',
-            desc: 'Increase your team’s productivity and save time with a bot that answers and fields customer inquiries',
-            image: '/images/service-1.png'
-        },
-        {
-            title: 'Build & Launch without problems',
-            desc: 'Increase your team’s productivity and save time with a bot that answers and fields customer inquiries',
-            image: '/images/service-2.png'
-        },
-        {
-            title: 'Build & Launch without problems',
-            desc: 'Increase your team’s productivity and save time with a bot that answers and fields customer inquiries',
-            image: '/images/service-3.png'
-        },
-        {
-            title: 'Build & Launch without problems',
-            desc: 'Increase your team’s productivity and save time with a bot that answers and fields customer inquiries',
-            image: '/images/service-4.png'
-        },
-    ])
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const { data } = await getJsonData('services.json')
+                setData(data['data']);
+            } catch (error) {
+                console.log(error);
+            }
+        })()
+
+    }, [])
+
     return (
         <section className="services py-5">
             <div className="container">

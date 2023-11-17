@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "title": "Build & Launch without problems",
+            "desc": "Increase your team’s productivity and save time with that answers and fields customer inquiries",
+            "image": "/images/service-1.png"
+        },
+        {
+            "title": "Enhance User Experience",
+            "desc": "Create seamless and engaging user interfaces to the overall experience of your product or service",
+            "image": "/images/service-2.png"
+        },
+        {
+            "title": "Optimize Digital Marketing",
+            "desc": "Maximize your online presence and reach your  audience through strategic digital marketing campaigns",
+            "image": "/images/service-3.png"
+        },
+        {
+            "title": "Secure Cloud Solutions",
+            "desc": "Ensure the safety and accessibility of your data with our secure cloud computing solutions",
+            "image": "/images/service-4.png"
+        }
+    ]
+}
