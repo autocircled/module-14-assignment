@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "icon": "fas fa-users",
+            "count": "564651",
+            "description": "Followers"
+        },
+        {
+            "icon": "fas fa-thumbs-up",
+            "count": "6300",
+            "description": "Solved Problems"
+        },
+        {
+            "icon": "far fa-smile",
+            "count": "25000",
+            "description": "Happy Customers"
+        },
+        {
+            "icon": "fas fa-route",
+            "count": "1254",
+            "description": "Projects Completed"
+        }
+    ]
+}
