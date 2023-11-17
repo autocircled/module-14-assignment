@@ -1,0 +1,61 @@
+{
+    "data": [
+        {
+            "name": "Devon Lane",
+            "position": "UI/UX Designer",
+            "image": "/images/team-1.png",
+            "profile": [
+                {
+                    "icon": "fab fa-facebook-f",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-instagram",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Danny Bailey",
+            "position": "Junior Developer",
+            "image": "/images/team-2.png",
+            "profile": [
+                {
+                    "icon": "fab fa-facebook-f",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-instagram",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Alex Lov",
+            "position": "CEO",
+            "image": "/images/team-3.png",
+            "profile": [
+                {
+                    "icon": "fab fa-facebook-f",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-instagram",
+                    "link": "#"
+                }
+            ]
+        }
+    ]
+}

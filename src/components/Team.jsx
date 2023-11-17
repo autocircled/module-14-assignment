@@ -1,71 +1,23 @@
-import { useState } from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import "../assets/css/team.css";
+import { getJsonData } from "../apiRequests/apiRequest";
 
 export const Team = () => {
-    const [data] = useState([
-        {
-            name: 'Devon Lane',
-            position: 'UI/UX Designer',
-            image: '/images/team-1.png',
-            profile: [
-                {
-                    icon: FaFacebookF,
-                    link: '#'
-                },
-                {
-                    icon: FaTwitter,
-                    link: '#'
-                },
-                {
-                    icon: FaInstagram,
-                    link: '#'
-                },
-            ]
-        },
-        {
-            name: 'Danny Bailey',
-            position: 'Junior Developer',
-            image: '/images/team-2.png',
-            profile: [
-                {
-                    icon: FaFacebookF,
-                    link: '#'
-                },
-                {
-                    icon: FaTwitter,
-                    link: '#'
-                },
-                {
-                    icon: FaInstagram,
-                    link: '#'
-                },
-            ]
-        },
-        {
-            name: 'Alex Lov',
-            position: 'CEO',
-            image: '/images/team-3.png',
-            profile: [
-                {
-                    icon: FaFacebookF,
-                    link: '#'
-                },
-                {
-                    icon: FaTwitter,
-                    link: '#'
-                },
-                {
-                    icon: FaInstagram,
-                    link: '#'
-                },
-            ]
-        },
-    ])
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const { data } = await getJsonData('team.json')
+                setData(data['data']);
+            } catch (error) {
+                console.log(error);
+            }
+        })()
+
+    }, [])
     return (
         <section className="team py-5">
             <div className="container">
@@ -86,7 +38,7 @@ export const Team = () => {
                                     <div className="social-profile-links">
                                         <ButtonGroup size="sm">
                                             {item.profile.map((profile, index) => (
-                                                <Button variant="light" key={index.toString()} href={profile.link}><profile.icon /></Button>
+                                                <Button variant="light" key={index.toString()} href={profile.link}><i className={profile.icon}></i></Button>
                                             ))}
                                         </ButtonGroup>
                                     </div>
