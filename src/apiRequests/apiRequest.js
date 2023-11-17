@@ -1,5 +1,5 @@
 import axios from 'axios'
-const BaseURL = "http://localhost:5173/database";
+const BaseURL = "https://module-14-assignment-red.vercel.app/database";
 
 export async function getJsonData(url) {
     const res = await axios.get(`${BaseURL}/${url}`)
