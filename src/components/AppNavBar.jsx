@@ -9,6 +9,7 @@ function AppNavBar() {
     const expand = 'md'
 
     useEffect(() => {
+        window.scrollTo(0, 0); // scroll to top on page load
         const body = document.body;
         window.onscroll = function () {
             if (document.documentElement.scrollTop > 0) {
